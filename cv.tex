@@ -1,0 +1,364 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright}p{1in}}
+\newcolumntype{R}{>{\raggedright\arraybackslash}p{5.5in}}
+
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text, Ligatures={Common}]{Calluna}
+\newfontfamily\semibf{Calluna Semibold}
+\newfontfamily\black[Alternate=1]{Calluna Black}
+\newfontfamily\fancy[Mapping=tex-text, Ligatures={Common,Rare},Alternate=1]{Calluna Italic}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage}
+\lfoot{\emph{Tim Gorichanaz -- CV}}
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{titlesec}
+% \titleformat*{\section}{\normalsize\bfseries}{\thesection}{1em}{\MakeUppercase} 
+
+\titleformat{\section} % command
+[hang]                 % shape
+{\normalsize} % format
+{\thesection}       % label
+{1em}                  % Spacing between label and title
+{\black\addfontfeature{LetterSpace=10.0}\MakeUppercase}       % before code
+\titlespacing{\section}% Set the spacing around the title
+{0pt}                  % Left
+{1em}                  % Above
+{0pt}                  % Below
+
+\usepackage{needspace}
+
+\raggedright
+\raggedbottom
+\widowpenalty=500000
+\clubpenalty=500000
+
+\usepackage{hyperref} % keep as last package imported!
+\hypersetup{
+    colorlinks=false,
+}
+
+\begin{document}
+	
+\begin{tabu} to 1\textwidth {@{} X[l] X[r] @{}}
+{\LARGE \textbf{Tim Gorichanaz}} & \textbf{4602 Woodland Ave, Philadelphia 19143} \\
+Curriculum vitae & gorichanaz@drexel.edu \\
+October 2017 & timgorichanaz.com\\ [1em]
+\end{tabu}
+
+% Below width is not full text width so that paragraph is centered relative to negative space between heading elements.
+\begin{tabu} to 0.94\textwidth { X[c] }
+\fancy{PhD candidate researching human information interaction in the domains of} \\
+\fancy{athletic, artistic and religious practice, through qualitative and humanistic methods,} \\
+\fancy{with philosophy of information, hermeneutic phenomenology and document theory}
+\end{tabu}
+
+\medskip
+
+\section*{Education}
+
+% I want the numerals of my PhD year to align with the other years. So I shift left "(2018)" by the length of "("... Same goes for forthcoming pubs!
+\newlength{\myl}
+\settowidth{\myl}{(}
+
+\begin{longtable}{ @{} p{.5in} @{} p{.5in} @{} R @{} }
+\hspace{-\myl}(2018)&	PhD&		\textbf{Information Studies}\\
+&&				College of Computing \& Informatics, Drexel University, Philadelphia\\
+&&				{\semibf Dissertation}: Understanding self-documentation\\[1em]
+    
+2013&	MA&	\textbf{Spanish \& Latin American Linguistic, Literary and Cultural Studies}\\
+&&				Department of Spanish and Portuguese, New York University, Madrid\\[1em]
+           
+2012&	Cert&	\textbf{Teaching English to Speakers of Other Languages}\\
+&&				Department of Linguistics, University of Wisconsin--Milwaukee\\[1em]
+           
+2011&	BA&	\textbf{Advertising and Spanish}, summa cum laude\\
+&&			College of Communication, Marquette University, Milwaukee\\
+&&			{\semibf Semester Abroad}: Uniwersytet Warszawski, Poland, 2010\\
+&&			{\semibf Summer Abroad}: Tecnológico de Monterrey, Mexico City, 2008
+\end{longtable}	
+
+\medskip
+
+\section*{Journal~~Publications}
+\begin{longtable}{ @{} L @{} R @{} }
+\emph{In progress}&	Gorichanaz, T. \textbf{Conceptualizing self-documentation}.\\[1em]
+
+\emph{In progress}&	Gorichanaz, T., and Nelson, J. \textbf{Drones, privacy and social justice: An information-ethical discussion with policy implications}.\\[1em]
+
+\emph{In progress}&	Gorichanaz, T., Richards, L., Narayan, B., and Luca, E. \textbf{Podcasts as information: Mapping a research program}.\\[1em]
+
+\emph{Under review}&	Gorichanaz, T., Latham, K. F., and Wood, E. \textbf{Lifeworld as ``unit of analysis.''} \emph{Library and Information Science Research}.\\[1em]
+
+\hspace{-\myl}(2018)&	Turner, D., and Gorichanaz, T. \textbf{Collaborative connections: Designing library services for the urban poor}. \emph{The Library Quarterly, 88}.\\[1em]
+
+\hspace{-\myl}(2018)&	Gorichanaz, T. \textbf{Understanding and information constellations in ultrarunning}. \emph{Library Trends, 66}(3/4).\\[1em]
+
+\hspace{-\myl}(2017)&	Gorichanaz, T. \textbf{Applied epistemology and understanding in information studies}. \emph{Information Research.} \\[1em]
+
+\hspace{-\myl}(2017)&	Gorichanaz, T. \textbf{Understanding art-making as documentation}. \emph{Art Documentation, 36}(2).\\[1em] 
+
+2017&	Gorichanaz, T. \href{http://jis.sagepub.com/content/early/2016/10/12/0165551516670099.full}{\textbf{There’s no shortcut: Building understanding from information in ultrarunning}}. \emph{Journal of Information Science, 43}(5), 713--722.\\[1em]
+
+2017&	Gorichanaz, T. \href{http://www.emeraldinsight.com/doi/full/10.1108/AJIM-03-2017-0071}{\textbf{The information of story: The genre and information activities of ultrarunning race reports}}. \emph{Aslib Journal of Information Management, 69}(4), 460--474.\\[1em]
+
+2017&	Gorichanaz, T. \href{http://www.emeraldinsight.com/doi/full/10.1108/JD-09-2016-0114}{\textbf{Information and experience, a dialogue}}. \emph{Journal of Documentation, 73}(3), 500--508.\\[1em]
+
+2017&	Gorichanaz, T., and Turner, D. \href{http://www.journals.uchicago.edu/doi/full/10.1086/690737}{\textbf{All the community’s a stage: The public library’s changing role in community information provision}}. \emph{The Library Quarterly, 87}(2), 99--116.\\[1em]
+
+2017&	Gorichanaz, T. \href{http://doi.org/10.1016/j.lisr.2017.01.001}{\textbf{Auto-hermeneutics: A phenomenological approach to information experience}}. \emph{Library and Information Science Research, 39}(1), 1--7.\\[1em]
+
+2016&	Gorichanaz, T., and Latham, K. F. \href{http://dx.doi.org/10.1108/JD-01-2016-0007}{\textbf{Document phenomenology: A framework for holistic analysis}}. \emph{Journal of Documentation, 72}(6), 1114--1133.\\
+&		{\semibf Awarded}: 2016 Outstanding Paper in \emph{Journal of Documentation}\\[1em]
+
+2016&	Gorichanaz, T. \href{http://www.tandfonline.com/doi/full/10.1080/00948705.2016.1206826}{\textbf{Beautiful and sublime: The aesthetics of running in a commodified world}}. \emph{Journal of the Philosophy of Sport, 43}(3), 365--379.\\[1em]
+
+2016&	Gorichanaz, T. \href{http://ideaexchange.uakron.edu/docam/vol3/iss1/7/}{\textbf{Documents and time}}. \emph{Proceedings from the Document Academy, 3}(1).\\[1em]
+
+2016&	Gorichanaz, T. \href{http://www.tandfonline.com/doi/full/10.1080/10477845.2016.1168278}{\textbf{Experiencing the Bible}}. \emph{Journal of Religious \& Theological Information, 15}(1/2), 19--31.\\[1em]
+
+2016&	Gorichanaz, T. \href{http://www.emeraldinsight.com/doi/pdfplus/10.1108/JD-09-2015-0117}{\textbf{How the document got its authority}}. \emph{Journal of Documentation, 72}(2), 299--305.\\[1em]
+
+2015&	Gorichanaz, T. \href{http://www.informationr.net/ir/20-4/paper697.html#.Weykl0zMw1h}{\textbf{Information on the run: Experiencing information during an ultramarathon}}. \emph{Information Research, 20}(4), paper 697.
+
+
+\end{longtable}
+
+\section*{Conference~~Publications}
+\begin{longtable}{ @{} L @{} R @{} }
+
+\emph{Under review}&	Gorichanaz, T. \textbf{The self and the selfie: An ethical examination of digital self-representation}. Submitted to \emph{iConference}, Sheffield, England.\\[1em]
+
+\hspace{-\myl}(2018)& Forte, A., Andalibi, N., Gorichanaz, T., Kim, M. C., Park, T. H., and Halfaker, A. \textbf{Information fortification: An online citation behavior}. To be presented at \emph{GROUP `18: ACM International Conference on Supporting Group Work}. Sanibel Island, Fla. 23\% acceptance rate.\\[1em]
+
+\hspace{-\myl}(2017)&	Gorichanaz, T., and Narayan, B. \textbf{Slowness, care and connection: Academic mentor--prot\'eg\'e relationships as collaborative sense-making}. To be presented at \emph{Research Application for Information and Library Studies} (RAILS). Adelaide, South Australia.\\[1em]
+
+2017&	Gorichanaz, T. \textbf{Information creation and models of information behavior: Towards synthesis}. Presented at \emph{Information: Interaction and Impact} ($i^3$), Aberdeen, Scotland.\\[1em]
+
+2017&	Latham, K. F., Narayan, B., and Gorichanaz, T. \textbf{Encountering the muse: An exploration of the relationship between inspiration and information in the museum}. Presented at \emph{Information: Interaction and Impact} ($i^3$), Aberdeen, Scotland.\\[1em]
+
+2016&	Lund, N. W., Gorichanaz, T., and Latham, K. F. \href{http://ideaexchange.uakron.edu/docam/vol3/iss2/1/}{\textbf{A discussion on document conceptualization}}. \emph{Proceedings from the Document Academy, 3}(2), Article 1. \\[1em]
+
+2016&	Gorichanaz, T. \href{http://ideaexchange.uakron.edu/docam/vol3/iss2/5/}{\textbf{Gauguin's savage document work: Understanding as function}}. Presented at the \emph{Annual Meeting of the Document Academy}, Denton, Texas. Published in \emph{Proceedings from the Document Academy, 3}(2), Article 5. \\[1em]
+
+2016&	Gorichanaz, T. \href{http://onlinelibrary.wiley.com/doi/10.1002/pra2.2016.14505301067/full}{\textbf{A gardener’s experience of document work at a historic landscape site}}. Presented at \emph{ASIS\&T Annual Meeting}, Copenhagen, Denmark. Published in \emph{Proceedings of the Association for Information Science \& Technology, 53}(1).\\
+&{\semibf Awarded}: Innovation Award from SIG for Information Needs, Seeking and Use\\[1em]
+
+2016&	Gorichanaz, T. \href{http://www.informationr.net/ir/22-1/colis/colis1636.htmlhttps://www.ideals.illinois.edu/handle/2142/89294}{\textbf{Genre, format and medium across the information professions}}. Presented at \emph{Conceptions of Library \& Information Science}, Uppsala, Sweden. Published in \emph{Information Research, 22}(1), Article colis1636.\\[1em]
+
+2016&	Gorichanaz, T. \href{http://www.ideals.illinois.edu/handle/2142/89294}{\textbf{Novel experiences: On page, in ear, on screen}}. Presented at \emph{iConference}, Philadelphia. 30\% acceptance rate. Published in online proceedings.\\[1em]
+
+2016&	Turner, D., and Gorichanaz, T. \href{http://dpi-journals.com/index.php/JELIS/article/view/1849}{\textbf{Old skills and new practices mean radical change for library education}}. Presented at \emph{ALISE Annual Conference}, Boston. Published in \emph{Journal of Education for Library and Information Science, 57}(3).  \\[1em]
+
+2015&	Gorichanaz, T. \href{http://ideaexchange.uakron.edu/docam/vol2/iss1/9/}{\textbf{For every document, a person: A co-created view of documents}}. Presented at the \emph{Annual Meeting of the Document Academy}, Sydney, Australia. Published in \emph{Proceedings from the Document Academy, 2}(1). \\[1em]
+
+2015&	Gorichanaz, T. \href{http://digitalcommons.kent.edu/asir/vol5/iss1/2/}{\textbf{Online religion? The evolving religious information landscapes of Zen Buddhism and Roman Catholicism}}. Presented at \emph{Conference on Information and Religion}, Kent, Ohio. Published in \emph{Advances in the Study of Information and Religion, 5}.
+
+\end{longtable}
+
+
+\section*{Other~~Conference~~Activities}
+
+\begin{longtable}{ @{} L @{} R @{} }
+
+\textbf{Talks}
+
+&	Gorichanaz, T. (2017). \textbf{Self-portraiture as self-documentation}. \emph{Annual Meeting of the Document Academy}, Bloomington, Ind.  \\[1em]
+
+&	Gorichanaz, T. (2017). \textbf{Documenting the creative process}. \emph{Keystone Digital Humanities Conference}, Philadelphia. \\[1em]
+
+&	Gorichanaz, T. (2016). \textbf{Toward a theory of time for the digital humanities}. \emph{Keystone Digital Humanities Conference}, Pittsburgh. \\[1em]
+
+&	Gorichanaz, T. (2016). \textbf{Bliss, and so much more}. \emph{Books \& Bagels: Conversations on Interdisciplinary Research}, Drexel University, Philadelphia.  \\[1em]
+
+\textbf{Panels}
+
+&	Latham, K. F., Hartel, J., Gorichanaz, T., and Nguyen, A. T. (\emph{Under review}). \textbf{Contemplating information in the pleasurable and profound}. Submitted to \emph{iConference}, Sheffield, England. \\[1em]
+
+&	Narayan, B., Latham, K. F., and Gorichanaz, T. (2017). \textbf{Collaborative auto-hermeneutics: Methodological openings and possibilities for studying information experience}. Presented at \emph{Information: Interaction and Impact} ($i^3$), Aberdeen, Scotland. \\[1em]
+
+&	Vamanu, I., Gorichanaz, T., Latham, K. F., and Suorsa, A. (2016). \textbf{Phenomenology in library and information science: Studying information experiences}. Presented at \emph{Conceptions of Library \& Information Science}, Uppsala, Sweden. \\[1em]
+
+\textbf{Doctoral Forums}
+
+&	Gorichanaz, T. (2017). \textbf{Understanding self-documentation}. \emph{ASIS\&T Annual Meeting}, Crystal City, Va. Advised by P. Fichman. \\[1em]
+
+&	Gorichanaz, T. (2016). \textbf{Experiencing self-portraiture as document work}. \emph{Conceptions of Library \& Information Science}, Uppsala, Sweden. Advised by G. Bowker. \\[1em]
+
+&	Gorichanaz, T. (2015). \textbf{Informed by format}. \emph{Research Applications in Information and Library Studies} (RAILS), Sydney, Australia. Advised by A. H. Lundh and M. Olsson. 
+	
+\end{longtable}
+
+
+
+
+\section*{Perspective~~Pieces,~~Short~~Communications~~\&~~Bo{}ok~~Reviews}
+\begin{longtable}{ @{} L @{} R @{} }
+2017&	Gorichanaz, T. \href{http://ideaexchange.uakron.edu/docam/vol4/iss1/1/}{\textbf{Editorial}} for the special issue ``Documents in Human Life: Fresh Approaches.'' \emph{Proceedings from the Document Academy, 4}(1). \\[1em]
+
+2017&	Gorichanaz, T. \href{http://libraryjuicepress.com/journals/index.php/jclis/article/view/7}{\textbf{Minting the obverse: Library and information studies as a one-sided coin}}. \emph{Journal of Critical Library and Information Studies, 1}(1). \\[1em]
+
+2016&	Turner, D., and Gorichanaz, T. \href{http://dpi-journals.com/index.php/JELIS/article/view/1972}{\textbf{Unsorting ourselves: A critical role for LIS education. A short communication}}. \emph{Journal of Education for Library and Information Science, 57}(4).  \\[1em]
+
+2015&	Gorichanaz, T. \href{http://dx.doi.org/10.1080/10477845.2015.1020742}{\textbf{A review of \emph{Religious objects in museums: Public lives and private duties}}}. \emph{Journal of Religious \& Theological Information, 14}(1/2), 52--53.	
+
+\end{longtable}
+
+\needspace{4\baselineskip}
+\section*{Other~~Publications}
+\begin{longtable}{ @{} L @{} R @{} }
+	
+\textbf{Essays}	& \href{http://acrossthemargin.com/business-cards/}{\textbf{Business cards}} \emph{Across the Margin}. October 2017. \\
+\quad & \href{http://thesmartset.com/lines-of-spines/}{\textbf{Lines of spines: What is a library?}} \emph{The Smart Set}. June 2017. Listed on Chronicle of Higher Education’s \emph{Arts \& Letters Daily}.\\
+\quad & \href{http://sinkholemag.com/tim-gorichanaz-3-1-17}{\textbf{Running and worldmaking}}. \emph{Sinkhole}. March 2017.\\[1em]
+
+\textbf{Articles} & \href{http://trailrunnermag.com/training/injuries-and-treatment/sleep-the-low-hanging-fruit-of-recovery.html}{\textbf{Sleep: The low-hanging fruit of recovery}}. \emph{Trail Runner Magazine}. March 2016.\\
+\quad & \href{http://ultrarunning.com/featured/jumpstart-your-recovery/}{\textbf{Jumpstart your recovery}}. \emph{UltraRunning Magazine}. October 2014.\\[1em]
+
+\textbf{Poetry} & \href{http://amzn.to/2yJNWvV}{\textbf{Geological time} and \textbf{Occult furniture}}. \emph{Chantwood Magazine}, issue 10. September 2017.\\
+\quad & \textbf{The world in a box}. \emph{Fwd: Museums}. June 2017.\\
+& \textbf{Three poems from Madrid}. \emph{Straight Forward Poetry Journal}. Spring 2014.\\[1em]
+
+\textbf{Short Stories}& \href{http://www.alexandriaquarterlymag.com/fiction-tim-gorichanaz/}{\textbf{The river god}}. \emph{Alexandria Quarterly}. August 2017.\\
+\quad & \href{http://literallystories2014.com/2017/04/18/luisa-by-tim-gorichanaz/}{\textbf{Luisa}}. \emph{Literally Stories}. April 2017.\\[1em]
+
+\textbf{Novels}	&\textbf{The eternal parade}. Self-published. 2016.\\
+\quad &\textbf{Koan}. Self-published. 2015.
+
+\end{longtable}
+
+\section*{Grants,~~Awards~~\&~~Honors}
+\begin{longtable}{ @{} L @{} R @{} }
+	
+\textbf{Research} &	2017. \textbf{Ongoing Dissertation Award}, from Litwin Books. \$1,000.\\
+\quad & 2017. \textbf{Outstanding Paper}, Emerald Literati Award for Excellence, from Emerald Global.\\
+& 2017. \textbf{International Travel Award}, from Office of International Programs. \$750.\\
+& 2016. \textbf{Innovation Award}, from ASIS\&T SIG for Information Needs, Seeking and Use. \$200. First awardee since 2013.\\
+& 2016--17. Selected as alternate for \textbf{Fulbright--Schuman Research Student Fellowship}.\\
+& 2015. \textbf{International Travel Award}, from Office of International Programs. \$600.\\
+&{\semibf Submitted but not awarded}: 2017--18 U.S.--Canada Fulbright Student Award.\\
+&{\semibf Submitted but not awarded}: 2016 ALA Diversity Research Grant Program.\\[1em]
+
+\textbf{Performance} & 2016. \textbf{Belver C. Griffith Endowment Scholarship}, from College. \$3,200.\\
+\quad & 2015. \textbf{Belver C. Griffith Endowment Scholarship}, from College. \$850. \\[1em]
+
+\textbf{Leadership}	& 2017. \textbf{New Leader Award}, from ASIS\&T. \$1,000.
+	
+\end{longtable}
+
+
+\section*{Research~~Positions}
+\begin{longtable}{ @{} L @{} R @{} }
+
+2017&	\textbf{Research Assistant}, for C. Sosnowy (PI). In \textbf{research group on life course outcomes for people with autism}. A. J. Drexel Autism Institute, Drexel University\\[1em]
+
+2014--2017&	\textbf{Research Assistant}, for D. Turner (PI). \textbf{The oral present, urban library services and the underserved}. College of Computing \& Informatics, Drexel University
+\end{longtable}
+
+\needspace{3\baselineskip}
+\section*{Professional~~Positions}
+\begin{longtable}{ @{} L @{} R @{} }
+2014&		\textbf{Quality Assurance}, Laughlin Constable, Milwaukee\\
+2009-12&		\textbf{Digital Project Management}, Laughlin Constable, Milwaukee
+\end{longtable}
+
+\needspace{3\baselineskip}
+\section*{Teaching~~Positions}
+\begin{longtable}{ @{} L @{} R @{} }
+2017--18&	\textbf{Instructor of Record}, for master’s and undergraduate courses: information ethics, academic librarianship and social aspects of information systems, Drexel University\\
+2015--17&		\textbf{Teaching Assistance} in online MSLIS courses, Drexel University\\
+2016&		\textbf{Quality Matters Certificate}, for applying the QM rubric in online course assessment\\
+2012--14&	\textbf{Online Tutor} and \textbf{Tutor Mentor}, Tutor.com\\
+2011--12	&	\textbf{Teaching Assistant}, Centro Hispano and International Learning Center, Milwaukee	\\
+\end{longtable}
+
+
+\section*{Service}
+
+\begin{longtable}{ @{} L @{} R @{} }
+	
+\textbf{Academia} & \textbf{Reviewer}, \emph{Journal of Documentation, Digital Humanities Quarterly, iConference, ACM CHI, Journal of Education for Library and Information Science, International Journal of Library and Information Science}\\
+\quad & \textbf{Language Editor}, \emph{Open Information Science}, 2016--\\
+& \textbf{Editor}, \emph{Proceedings from the Document Academy}, 2016--\\
+\quad & \textbf{Webmaster}, ASIS\&T SIG for Information Needs, Seeking and Use, 2017--\\
+& \textbf{Communications Officer}, ASIS\&T SIG for Arts and Humanities, 2016--17\\
+& \textbf{Committee member}, ALISE/Eugene Garfield Doctoral Dissertation Award, 2016--18\\
+& \textbf{Student volunteer}, competitively selected and funded, \emph{iConference 2016}\\
+& \textbf{Fellowships Ambassador}, Drexel University Fellowships Office, 2016--17\\[1em]
+
+\textbf{Community}& \textbf{Running Mentor} for high school students, Students Run Philly Style, Philadelphia\\
+\quad & \textbf{Tour Guide}, The Woodlands Historic Mansion and Cemetery, Philadelphia\\
+\quad & \textbf{Race Director}, Annual Turtle Trail 50 Mile Fun Run, Philadelphia--Valley Forge
+		
+
+
+\end{longtable}
+
+
+
+
+
+\section*{Memberships}
+\begin{longtable}{ @{} L @{} R @{} }
+
+\textbf{Professional}&Human Science Institute\\
+\textbf{Associations}&Association for Information Science and Technology (ASIS\&T)\\
+&Association for Library and Information Science Education (ALISE)\\
+&Society for the Philosophy of Information\\[1em]
+
+\textbf{Honors}&Upsilon Pi Epsilon (Computing and Information)\\
+\textbf{Societies}&Sigma Delta Pi (Spanish)\\
+&Kappa Tau Alpha (Mass Communications)\\[1em]
+
+\textbf{Community}&Sigma Chi Fraternity, Life Loyal Sig\\
+\textbf{Organizations}&Philadelphia Museum of Art, Young Friend\\
+&Woodlands Cemetery Company, Runner, Young Friend\\
+
+
+
+\end{longtable}
+
+
+\needspace{6\baselineskip}
+\section*{Language~~Skills}
+\begin{longtable}{ @{} L @{} R @{} }
+
+Spanish		& Excellent\\
+French		& Reading with dictionary\\
+Danish		& Elementary\\
+Japanese	& Elementary\\
+Polish		& Elementary
+
+\end{longtable}
+
+
+
+\section*{Other~~Skills}
+\begin{longtable}{ @{} L @{} R @{} }
+	
+Proficient	& Translation (Spanish), HTML+CSS, Wordpress, Movable Type, Adobe Creative Suite, Lightroom, Blackboard\\[1em]
+
+Basic & \LaTeX, Python, PHP, GitHub
+
+\end{longtable}
+
+\section*{Hobbies}
+\begin{longtable}{ @{} L @{} R @{} }
+Travel		&	Having lived abroad, enjoys exploring new cultures\\
+Writing		&	Writes poetry and magical realism novels\\
+Running		&	Runs ultramarathons and sometimes marathons\\
+Music		&	Practices classical guitar for a change of pace\\
+Gaming		&	Plays Dungeons \& Dragons (5e) and boardgames
+
+\end{longtable}
+
+
+\end{document}
